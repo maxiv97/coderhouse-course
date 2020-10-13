@@ -1,23 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Logo from './components/logo';
+import Paragraph from './components/paragraph';
+import Author from './components/author';
 
 function App() {
+  const paragraphText = "“Code is like humor. When you have to explain it, it’s bad.”";
+  const author = "Maxi";
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Logo/>
+        <Paragraph text={paragraphText}/>
+        <Author author={author}/>
       </header>
     </div>
   );

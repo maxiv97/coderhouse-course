@@ -1,0 +1,12 @@
+.branding-logo {
+    width: 180px;
+    margin: 0 30px;
+    padding: 3px 0;
+    margin-left: 240px;
+}
+
+@media only screen and (max-width: 768px) {
+    .branding-logo {
+        margin: 0;
+    }
+}

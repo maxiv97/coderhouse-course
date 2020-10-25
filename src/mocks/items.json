@@ -1,0 +1,29 @@
+{
+    "items": [
+        {
+            "id": 0,
+            "title": "Andes Roja 480ml",
+            "categoryId": 1
+        }, {
+            "id": 1,
+            "title": "Fernet Branca 750ml",
+            "categoryId": 2
+        }, {
+            "id": 2,
+            "title": "Vodka Smirnoff Original Clasico 700ml",
+            "categoryId": 5
+        }, {
+            "id": 3,
+            "title": "Patagonia Amber Lagger 740ml",
+            "categoryId": 1
+        }, {
+            "id": 4,
+            "title": "Corona 355cc",
+            "categoryId": 1
+        }, {
+            "id": 5,
+            "title": "Jagermeister 700ml",
+            "categoryId": 3
+        }
+    ]
+}

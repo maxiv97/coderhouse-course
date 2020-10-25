@@ -1,0 +1,5 @@
+.nav-menu-list {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 5px;
+}

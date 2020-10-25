@@ -1,0 +1,23 @@
+{
+    "categories": [
+        {
+            "id": 0,
+            "title": "Aperitivos"
+        }, {
+            "id": 1,
+            "title": "Cervezas"
+        }, {
+            "id": 2,
+            "title": "Fernet"
+        }, {
+            "id": 3,
+            "title": "Licores"
+        }, {
+            "id": 4,
+            "title": "Vinos"
+        }, {
+            "id": 5,
+            "title": "Vodka"
+        }
+    ]
+}

@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Category.css';
 
-const Category = ({id, isClicked, title, handleCategoryClick}) => (
-    <div className='category' onClick={() => handleCategoryClick(id)}>
+const Category = ({id, isClicked, title, handleCategoryClick}) => {
+
+    let [customClass, setCustomClass] = useState('');
+
+    return (
+    <div className={`category ${customClass}`} onClick={() => handleCategoryClick(id)} onMouseOver={() => setCustomClass('isOver')} onMouseOut={() => setCustomClass('')}>
         <span className='category-title'>{title}</span>
-        <input className='category-checkbox' type='checkbox' defaultChecked={isClicked}/>
     </div>
-);
+)};
 
 
 export default Category;

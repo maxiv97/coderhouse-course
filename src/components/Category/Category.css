@@ -3,19 +3,14 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 40px;
-    margin: 20px 0;
-    border: 1px solid black;
-    border-radius: 25px;
+    border-radius: 8px;
 }
-
-.category :nth-child(2) {
-  }
 
 .category-title {
-    font-size: 30px;
+    font-size: 1.2em;
+    font-weight: 500;
 }
 
-.category-checkbox {
-    justify-self: flex-end;
-    align-self: center; 
+.isOver {
+    background-color: rgb(248, 235, 211);
 }

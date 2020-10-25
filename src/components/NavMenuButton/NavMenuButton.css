@@ -1,0 +1,32 @@
+.nav-menu-button-container {
+    position:relative;
+    display:block;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.nav-menu-button {
+    padding: 3px;
+    margin: 0 3px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.arrow {
+    margin-left: 0.75em;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.drop {
+    position:absolute;
+    display:block;
+}

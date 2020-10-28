@@ -31,7 +31,7 @@ const ItemCount = ({stock, onAdd}) => {
                 <img className={`cart-button ${increaseButtonCustomClass}`} src={increaseIcon} alt='increase' onClick={onIncrease}/>
             </div>
             <div>
-                <span className={`add-button ${hasNoItemsCustomClass}`} onClick={() => onAdd(counter)}>Agregar</span>
+                <span className={`add-button ${hasNoItemsCustomClass}`} onClick={ () => { if(counter !== 0) {onAdd(counter)}}}>Agregar</span>
             </div>
         </div>
     )

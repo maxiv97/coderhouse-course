@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Category.css';
 
-const Category = ({id, isClicked, title, handleCategoryClick}) => {
+const Category = ({id, title, handleCategoryClick}) => {
 
     let [customClass, setCustomClass] = useState('');
 

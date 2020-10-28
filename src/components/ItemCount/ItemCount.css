@@ -1,0 +1,47 @@
+.item-count-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-buttons {
+    display: flex;
+}
+
+.cart-button {
+    margin: 0 3px;
+    height: 1.1em;
+    width: 1.1em;
+    padding: 0.3em;
+    border-radius: 4px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.display {
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.disable-button {
+    opacity: 0.3;
+}
+
+.add-button {
+    margin: 3px 3px;
+    padding: 0.3em;
+    border-radius: 4px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}

@@ -4,32 +4,38 @@
             "id": 1234,
             "title": "Andes Roja 480ml",
             "categoryId": 1,
-            "stock": 7
+            "stock": 7,
+            "price": 80
         }, {
             "id": 4564,
             "title": "Fernet Branca 750ml",
             "categoryId": 2,
-            "stock": 4
+            "stock": 4,
+            "price": 480
         }, {
             "id": 6544,
             "title": "Vodka Smirnoff Original Clasico 700ml",
             "categoryId": 5,
-            "stock": 7
+            "stock": 7,
+            "price": 350
         }, {
             "id": 7243,
             "title": "Patagonia Amber Lagger 740ml",
             "categoryId": 1,
-            "stock": 2
+            "stock": 2,
+            "price": 140
         }, {
             "id": 2334,
             "title": "Corona 355cc",
             "categoryId": 1,
-            "stock": 6
+            "stock": 6,
+            "price": 40
         }, {
             "id": 4244,
             "title": "Jagermeister 700ml",
             "categoryId": 3,
-            "stock": 11
+            "stock": 11,
+            "price": 1890
         }
     ]
 }

@@ -3,13 +3,17 @@ import './Item.css';
 import ItemCount from '../ItemCount/ItemCount';
 
 
-const Item = ({title, stock, itemId, onAddItem}) => {
+const Item = ({title, stock, itemId, price, onAddItem}) => {
     
     const onAdd = quantity => onAddItem(quantity, itemId);
     
     return (
     <div className='item'>
-        <span className='item-title'>{title}</span>
+        <div className='item-info'>
+            <span className='item-title'>{title}</span>
+            <span> Precio: $ {price}</span>
+            
+        </div>
         <ItemCount stock={stock} onAdd={onAdd}/>
     </div>
 )};

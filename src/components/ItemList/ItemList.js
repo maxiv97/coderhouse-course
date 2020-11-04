@@ -3,8 +3,8 @@ import Item from '../Item/Item';
 import './ItemList.css';
 import itemsMock from '../../mocks/items.json';
 
-const ItemList = ({itemsWereFilteredByCategory}) => {
-    const itemTask = new Promise((resolve, reject) => {
+const ItemList = ({itemsWereFilteredByCategory, onItemClick}) => {
+    const itemTask = () => new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(itemsMock.items);
         }, 2000);
@@ -12,30 +12,12 @@ const ItemList = ({itemsWereFilteredByCategory}) => {
 
     const [itemList, setItemList] = useState([]);
 
-
     useEffect(() => {
-        itemTask.then(itemsList => setItemList(itemsList));
-    }, [itemTask])
+        itemTask().then(itemsList => setItemList(itemsList));
+    }, [])
 
-    const [addedItems, setAddedItems] = useState([]);
     const [isItemsFilteredFounded, setIsItemsFilteredFounded] = useState(true);
     
-    const onAdd = (quantity, itemId) => {
-        const hadPreviouslyAdded = itemAdded => itemAdded.itemId === itemId;
-
-        if (addedItems.some(hadPreviouslyAdded)) {
-            const newAddedItems = addedItems.map(item => {
-                if (item.itemId === itemId) {
-                    item.quantity = quantity;
-                }
-                return item;
-            });
-
-            setAddedItems([...newAddedItems]);
-        } else {
-            setAddedItems([...addedItems, {itemId, quantity}]);
-        }
-    };
     
     useEffect(() => {
         if (itemsWereFilteredByCategory !== -1) {
@@ -51,17 +33,13 @@ const ItemList = ({itemsWereFilteredByCategory}) => {
         } 
     }, [itemsWereFilteredByCategory]);
 
-    useEffect(() => {
-        console.log('Items agregados: ', addedItems);
-    });
-
     return (
         <>
             <h1>Productos disponibles:</h1>
             {!isItemsFilteredFounded && <span>Lo sentimos, no encontramos productos de esa categoría</span>}
             {itemList.length > 0 ? 
             (<div className='item-list'>
-                {itemList.map(item => <Item key={item.id} title={item.title} stock={item.stock} itemId={item.id} price={item.price} onAddItem={onAdd}/>)}
+                {itemList.map(item => <Item key={item.id} item={item} onItemClick={onItemClick}/>)}
             </div>) : 
             (<h2>Loading...</h2>)}
         </>

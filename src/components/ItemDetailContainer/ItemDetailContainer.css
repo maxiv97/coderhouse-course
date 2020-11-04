@@ -1,0 +1,39 @@
+.item-detail-container {
+    display: flex;
+    padding: 2em;
+    margin-top: 3em;
+}
+
+.picture-container {
+    padding: 1em;
+    border: 0.2em solid black;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-detail-title {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.item-detail-price {
+    font-size: 1.5em;
+}
+
+.item-detail-buttons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.purchase-button {
+    font-size: 1.2em;
+    padding: 0.3em;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: rgb(112, 182, 247);
+}

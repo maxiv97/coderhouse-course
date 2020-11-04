@@ -1,18 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import NavBar from './components/NavBar/Navbar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemsViewContainer from './pages/ItemsViewContainer/ItemsViewContainer';
 
 const App = () => {
-
-
-    const [itemsWereFilteredByCategory, setItemsWereFilteredByCategory] = useState(-1);
-    const onCategoryClick = categoryFilteredId => setItemsWereFilteredByCategory(categoryFilteredId);
-
     return (
     <div className="App">
-        <NavBar onCategoryClick={onCategoryClick}/>
-        <ItemListContainer itemsWereFilteredByCategory={itemsWereFilteredByCategory}/>
+        <ItemsViewContainer/>
     </div>
 )};
 

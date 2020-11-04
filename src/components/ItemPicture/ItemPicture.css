@@ -1,0 +1,30 @@
+
+.item-picture {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0.3em;
+}
+
+.Aperitivos {
+    background-image: url(../../assets/drink.png);
+}
+
+.Cervezas {
+    background-image: url(../../assets/beer.png);
+}
+
+.Fernet {
+    background-image: url(../../assets/fernet.png);
+}
+
+.Licores {
+    background-image: url(../../assets/licor.png);
+}
+
+.Vinos {
+    background-image: url(../../assets/wine.png);
+}
+
+.Vodka {
+    background-image: url(../../assets/vodka.png);
+}

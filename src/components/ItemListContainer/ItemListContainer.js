@@ -1,8 +1,8 @@
 import React from 'react';
 import ItemList from '../ItemList/ItemList';
 
-const ItemListContainer = ({itemsWereFilteredByCategory}) => {
-    return <ItemList itemsWereFilteredByCategory={itemsWereFilteredByCategory}/>
+const ItemListContainer = ({itemsWereFilteredByCategory, onItemClick}) => {
+    return <ItemList itemsWereFilteredByCategory={itemsWereFilteredByCategory} onItemClick={onItemClick}/>
 };
 
 export default ItemListContainer;
